@@ -1,0 +1,128 @@
+body{
+    background: #f8f8f8;
+}
+#main-content{
+}
+.navbar-toggle{
+    border: none !important;
+    border-radius: 1px;
+    background: inherit !important;
+}
+.navbar-toggle:hover{
+    background: #aaa !important;
+}
+.navbar-toggle .icon-bar{
+    background: #eee !important;
+}
+.journals{
+    padding: 15px;
+}
+.journals .ro{
+    overflow:hidden;
+    background-color: #fff;
+    min-height: 260px;
+    padding: 20px 5px 0px 0px;
+    border: 1px solid #eee;
+    border-left: 5px solid #eee;
+    box-shadow: 1px 1px 4px #eee;
+}
+.journal-title{
+    text-transform: uppercase;
+    text-align: center;
+    color: #555;
+    font-size: 1.7em;
+}
+.navbar{
+    margin-bottom: 0;
+    background: #065139;
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 3px solid #fbc800;
+}
+.navbar li a, .navbar .navbar-brand{
+    color: #fff !important;
+}
+#header{
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 3px 3px 0 0;
+}
+#header  #headerTitle h1{
+    box-shadow: 0px 4px 7px #ddd;
+    margin: 0;
+    padding: 0;
+}
+.header-container img{
+    margin: 0;
+    margin-bottom: -1px;
+    width: 100%;
+    height: auto;
+}
+.cover a{
+    border-radius: 0;
+}
+.cover a:hover{
+    border: 0;
+    box-shadow: 0px 1px 10px #16a085;
+}
+.cover a img{
+    margin: 0;
+    padding: 0;
+}
+.act{
+    border-radius: 1px;
+    margin: 3px 0;
+    color: #fff !important;
+    width: 100%;
+    background: #065139;
+    border: none;
+}
+.act:active, .act:visited{
+    background: inherit;
+}
+.act:hover{
+    background: #fbc800;
+}
+.copy_right{
+    background: #065139;
+    color: #eee;
+    text-align: center;
+    padding: 7px;
+    margin: 0 !important;
+    overflow: hidden;
+    font-size: 11px;
+}
+.footer-content{
+    background: #157254;
+    color: #eee;
+    min-height: 120px;
+    padding: 15px;
+    border-top: 2px solid #fbc800;
+}
+.flogo img{
+    height: 70px;
+    margin-top: 0;
+}
+.modal, .modal-content{
+    border-radius: 1px;
+}
+.modal-header{
+    color: #fff;
+    background: #01a3a4;
+}
+.modal-body{
+    color: #555;
+    text-align: justify;
+}
+.container-fluid {
+    background: #065139;
+}
+@media screen and (max-width: 768px){
+    .hiden{
+        display: none;
+    }
+}
+.designed, .designed:hover{
+    color: #fff !important;
+    background: inherit;
+}

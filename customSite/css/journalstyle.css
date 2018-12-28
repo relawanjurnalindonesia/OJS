@@ -1,0 +1,283 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+body {
+	background-color: #fbfbfb;
+	color: #555;
+	font-family:Open Sans, verdana;
+	font-size:120%;
+	line-height:1em;
+	font-weight:400;
+}
+
+a:link {
+	color: #C7651E;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+a:active {
+	color: blue;
+}
+
+a:visited {
+	color: #blue;
+}
+
+a:hover {
+	color: #999;
+	background: #ffffff;
+}
+
+input.textField, select.selectMenu, textarea.textArea, input.uploadField {
+	background-color: #eeeeee;
+}
+
+input.defaultButton {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#header {
+	background:#fff url(images/logosmall.png) 20px center no-repeat;
+	border-bottom: 3px solid #f4c326;
+	height:50px;
+	width:100%;
+}
+
+
+
+#headerTitle  {
+width:35%;
+float:left;
+}
+#navbar {
+width:60%;
+float:right;
+padding-top:14px;
+padding-bottom:15px;
+border:none !important;
+text-align:right;
+padding-right:25px;
+}
+#headerTitle h1 {
+	padding:0;
+	padding-left:110px;
+	font-size:18px;
+	font-family:Open Sans, verdana;
+	font-weight:400;
+	height:50px;
+	line-height:50px;
+	color:rgb(167, 0, 0);
+	letter-spacing:0;
+	text-transform: uppercase;
+}
+
+
+
+#main {
+	background-color: #fbfbfb;
+	border:none;
+}
+
+
+#main h1,
+#main h2,
+#main h3,
+#main h4 {
+	font-family:Cloud World, Cloud World;
+	font-weight:600;
+	line-height:1.5em;
+}
+
+#main h2 {
+	font-size:1.2em;
+	padding-left: 10px;
+}
+
+#main h3{
+	font-size:1.1em;
+}
+
+td.tocGalleys {
+	padding-right: 10px;
+}
+
+#navbar {
+	padding-left: 10px;
+	border-bottom: 1px solid black;
+}
+
+#breadcrumb {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+#content {
+	padding-left: 10px;
+	border-top: 1px solid #ddd;
+}
+#content h3 {
+font-size:1.5em;
+color:#rgb(167, 0, 0);
+}
+
+#intro {
+clear:both;
+min-height:170px;
+}
+#intro img.align-left {
+  float:left;
+  margin: 0 10px 10px 0;
+}
+
+/* Buttons
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 27px;
+  padding: 0 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: rgba(255, 195, 5, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 195, 5, 1);
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+   border: 1px solid rgba(255, 195, 5, 1);
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #fff;
+  background-color: #ffae00;
+  border-color: #ffae00; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #fff;
+  background-color: #b66800;
+  border-color: #b66800; }
+
+/* Forms
+â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="file"],
+textarea,
+select.selectMenu,
+select {
+  height: 28px;
+  padding: 2px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+/* Removes awkward default styles on some inputs for iOS */
+.ui-widget-content.ui-autocomplete-input {
+font-size:14px;
+}
+input[type="text"]
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #ffae00;
+  outline: 0; }
+
+fieldset {
+  padding: 0;
+  border-width: 0; }
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; }
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; }
+
+  /* hide font controller */
+  #sidebarFontSize {display:none;}
+
+#sidebar div.block span.blockTitle {
+padding-bottom:5px;
+border-bottom:2px solid #ddd;
+margin-bottom:10px;
+}
+#sidebarDevelopedBy,#sidebarHelp {
+display:none;
+}
+
+#sidebarUser {
+background:#f1f1f1;
+padding:20px;
+margin-bottom:20px;
+}
+#sidebarUser span.blockTitle  {
+display:none !important;
+}
+#rightSidebar {
+width:20%;
+margin-right:4%;
+}
+#headerTitle h1 img {
+    width: 100%;
+    float: left;
+}
