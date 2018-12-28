@@ -50,7 +50,7 @@
 
 				<p>
 				<a href="{url journal=$journal->getPath()}" class="act btn btn-info"><span class="fa fa-folder-open"></span> View Journal</a>
-				<a href="https://journal.uinsgd.ac.id/index.php/ijni/issue/current" class="act btn btn-info"><span class="fa fa-archive"></span> Current Issue</a>
+				<a href="{url journal=$journal->getPath()}issue/current" class="act btn btn-info"><span class="fa fa-archive"></span> Current Issue</a>
 				<a href="javascript:void(0)" class="act btn btn-info" data-toggle="modal" data-target="#myModal{$noj}"><span class="fa fa-file-text-o"></span> Description</a>
 			</div>
 			</div>
