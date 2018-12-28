@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/themes/customSite/version.xml
+  *
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  * Customized by Anwar Dani from RJI Custom Theme @ 2018
+  *
+  * Plugin version information.
+
+  -->
+<version>
+	<application>customSite</application>
+	<type>plugins.themes</type>
+	<release>1.0.0.0</release>
+	<date>2018-12-20</date>
+	<lazy-load>0</lazy-load>
+	<class>customSiteThemePlugin</class>
+</version>
