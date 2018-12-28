@@ -18,19 +18,23 @@
 {/strip}
 
 <div class="row" id="main-content">
-	{assign var=val value=1}
+<a name="journals"></a>
+	{assign var=noj value=1}
 	{iterate from=journals item=journal}
-		<span style="display:none">{$val}</span>
+		<span style="display:none">{$noj}</span>
 
 		<div class="col-md-4 col-sm-6 col-xs-12 journals">
 			<div class="ro">
 			<div class="col-sm-6 col-xs-6">
 						<div class="cover">
 								<a href="{url journal=$journal->getPath()}"  class="thumbnail">
-								{if $displayJournalThumbnail.uploadName}
-									<img src="{$journalFilesPath}{$journal->getId()}/{$displayJournalThumbnail.uploadName|escape:"url"}" {if $altText != ''}alt="{$altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
-								{else}
-									<img src="{$baseUrl}/plugins/themes/customSite/css/no-cover.jpg" alt="Cover not ready at this time">
+                {if $site->getSetting('showThumbnail')}
+                  {assign var="displayJournalThumbnail" value=$journal->getLocalizedSetting('journalThumbnail')}
+                  {if $displayJournalThumbnail && is_array($displayJournalThumbnail)}
+									    <img src="{$journalFilesPath}{$journal->getId()}/{$displayJournalThumbnail.uploadName|escape:"url"}" {if $altText != ''}alt="{$altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if} />
+								  {else}
+									    <img src="{$baseUrl}/plugins/themes/customSite/css/no-cover.jpg" alt="Cover not ready at this time">
+                  {/if}
 								{/if}
 								</a>
 						</div>
@@ -47,13 +51,13 @@
 				<p>
 				<a href="{url journal=$journal->getPath()}" class="act btn btn-info"><span class="fa fa-folder-open"></span> View Journal</a>
 				<a href="https://journal.uinsgd.ac.id/index.php/ijni/issue/current" class="act btn btn-info"><span class="fa fa-archive"></span> Current Issue</a>
-				<a href="javascript:void(0)" class="act btn btn-info" data-toggle="modal" data-target="#myModal1"><span class="fa fa-file-text-o"></span> Description</a>
+				<a href="javascript:void(0)" class="act btn btn-info" data-toggle="modal" data-target="#myModal{$noj}"><span class="fa fa-file-text-o"></span> Description</a>
 			</div>
 			</div>
 		</div>
 
 		  <!-- Modal -->
-	  <div class="modal fade" id="myModal1" role="dialog">
+	  <div class="modal fade" id="myModal{$noj}" role="dialog">
 		<div class="modal-dialog">
 
 		  <!-- Modal content-->
@@ -63,17 +67,19 @@
 			  <h4 class="modal-title">Description</h4>
 			</div>
 			<div class="modal-body">
-			{if $site->getSetting('showDescription')}
-				{if $journal->getLocalizedDescription()}
-					{$journal->getLocalizedDescription()}
-				{/if}
-			{/if}
+        {if $site->getSetting('showDescription')}
+      		{if $journal->getLocalizedDescription()}
+      			<div class="journalDescription" id="journalDescription-{$journal->getId()|escape}">
+      				{$journal->getLocalizedDescription()|nl2br}
+      			</div>
+      		{/if}
+      	{/if}
 			</div>
 		  </div>
 
 		</div>
 	  </div>
-	  {assign var=val value=$val+1}
+	  {assign var=noj value=$noj+1}
 	{/iterate}
 
 </div>
